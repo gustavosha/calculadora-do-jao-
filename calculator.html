@@ -6,91 +6,7 @@
     <title>Calculadora Trigonométrica</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-
-        .calculator {
-            width: 80%;
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: #87CEEB;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #display {
-            width: 100%;
-            height: 40px;
-            font-size: 20px;
-            text-align: right;
-            margin-bottom: 10px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            color: #000;
-        }
-
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: minmax(50px, auto);
-            gap: 10px;
-            width: 100%;
-        }
-
-        button {
-            width: 100%;
-            height: 50px;
-            font-size: 18px;
-            background-color: #0099CC;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button.delete {
-            background-color: #FF3333;
-        }
-
-        button.calculate {
-            background-color: #0073e6;
-        }
-
-        button.operation {
-            background-color: #008CBA;
-        }
-
-        button.number {
-            background-color: #0099CC;
-        }
-
-        button:hover {
-            background-color: #005c99;
-        }
-
-        .fracoes {
-            margin-top: 20px;
-            display: inline-block;
-        }
-
-        footer {
-            background-color: #008CBA;
-            color: white;
-            font-weight: bold;
-            padding: 10px;
-            font-size: 14px;
-            margin-top: 15px;
-        }
+        /* Estilos CSS aqui */
     </style>
 </head>
 <body>
@@ -121,10 +37,14 @@
             <button onclick="appendToDisplay('(')">(</button>
             <button onclick="appendToDisplay(')')">)</button>
             <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('PA(')">PA</button>
+            <button onclick="appendToDisplay('PG(')">PG</button>
+            <button onclick="appendToDisplay('log(')">log</button>
+            <button onclick="appendToDisplay(',')">,</button>
             <button class="calculate" onclick="calculateResult()">=</button>
         </div>
     </div>
-    <div class="fracoes">
+    <div class="fractions">
         <a href="index.html">
             <button>
                 Frações
@@ -132,8 +52,8 @@
         </a>
     </div>
     <footer>
-        Feito por Gustavo, Diego, Giovanna, Kerllon, Heloisa para uma atividade avaliativa de Programação Mobile e Matematica
+        Feito por Gustavo, Diego, Giovanna, Kerllon, Heloisa para uma atividade avaliativa de Programação Mobile e Matemática
     </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
